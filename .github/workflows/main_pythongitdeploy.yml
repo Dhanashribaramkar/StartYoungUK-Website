@@ -29,10 +29,8 @@ jobs:
       
       - name: Install dependencies
         run: |
-         apt-get install sox ffmpeg libcairo2 libcairo2-dev
-         apt-get install texlive-full
-         pip3 install manimlib
-         pip3 install manimce
+         brew install cairo
+         pip install pycairo
          pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
