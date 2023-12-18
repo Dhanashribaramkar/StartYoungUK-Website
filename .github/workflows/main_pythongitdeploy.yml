@@ -29,9 +29,6 @@ jobs:
       
       - name: Install dependencies
         run: |
-         apt-get install pkg-config
-         apt-get install libcairo2-dev libjpeg-dev libgif-dev
-         pip install pycairo
          pip install --upgrade pip
          pip install -r requirements.txt
         
