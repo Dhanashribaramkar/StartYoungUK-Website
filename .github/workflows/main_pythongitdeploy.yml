@@ -29,10 +29,11 @@ jobs:
       
       - name: Install dependencies
         run: |
-         apt-get update -y
+         apt-get update
          apt-get install -y pkg-config
          apt-get install libcairo2-dev libjpeg-dev libgif-dev
          pip install pycairo
+         pip install --upgrade pip
          pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
